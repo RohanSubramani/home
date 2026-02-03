@@ -131,13 +131,14 @@ a:hover {
 
 .hero-image {
     flex: 0 0 300px;
+    width: 300px;
+    height: 300px;
     margin-top: 1rem;
-}
-
-.profile-img {
-    width: 100%;
-    height: auto;
     border-radius: 50%;
+    background-image: url(profile.png);
+    background-size: 140%;
+    background-position: center 22%;
+    background-repeat: no-repeat;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 }
 
