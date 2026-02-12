@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      @font-face {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtM.woff2) format('woff2');
+        unicode-range: U+0000-00FF;
+      }
+    </style>
+  </defs>
+  <rect width="32" height="32" fill="#fff"/>
+  <text x="16" y="22" font-family="'Playfair Display', serif" font-size="18" font-weight="400" fill="#000" text-anchor="middle">RS</text>
+</svg>
