@@ -109,8 +109,6 @@ a:focus-visible {
     margin-top: 1.8rem;
 }
 
-.bio p:first-child { color: var(--ink-soft); }
-
 .social-links {
     display: flex;
     flex-wrap: wrap;
