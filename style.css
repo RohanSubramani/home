@@ -373,3 +373,12 @@ a.shuffle-button {
 @media (max-width: 520px) {
     .quote-shuffle { grid-template-columns: 1fr; }
 }
+
+/* Friends line at the bottom of the home page */
+.friends {
+    margin-top: 3rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+}
