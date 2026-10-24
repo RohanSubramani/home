@@ -382,3 +382,9 @@ a.shuffle-button {
     font-size: 0.95rem;
     color: var(--ink-soft);
 }
+
+.answer-list {
+    margin: 0 0 1rem 1.2rem;
+}
+
+.answer-list li { margin-bottom: 0.7rem; }

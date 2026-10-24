@@ -177,10 +177,6 @@ window.QUOTES = [
     "cite": "Isaac Asimov"
   },
   {
-    "text": "It's like everyone tells a story about themselves inside their own head. Always. All the time. That story makes you what you are.",
-    "cite": "Bast, <em>The Name of the Wind</em> by Patrick Rothfuss"
-  },
-  {
     "text": "Anyone can love a thing because. That's as easy as putting a penny in your pocket. But to love something despite. To know the flaws and love them too. That is rare and pure and perfect.",
     "cite": "Kvothe, <em>The Wise Man's Fear</em> by Patrick Rothfuss"
   },
@@ -318,7 +314,7 @@ window.QUOTES = [
   },
   {
     "text": "Today is the first day of the rest of your life!",
-    "cite": "Commonly credited to Charles Dederich"
+    "cite": "Commonly credited to Charles Dederich (but I know it from <em>Breaking Bad</em>)"
   },
   {
     "text": "Ask yourself not 'what is the right decision' but rather 'which decision will get me closer to the kind of person I want to be.'",
@@ -335,5 +331,109 @@ window.QUOTES = [
   {
     "text": "Happiness is available. Please help yourself to it.",
     "cite": "Thich Nhat Hanh"
+  },
+  {
+    "text": "If writing down your ideas always makes them more precise and more complete, then no one who hasn't written about a topic has fully formed ideas about it. And someone who never writes has no fully formed ideas about anything nontrivial.",
+    "cite": "Paul Graham, <em>Putting Ideas into Words</em>"
+  },
+  {
+    "text": "You can only be 50%+-focused on one thing at a time—or zero, in bad cases.",
+    "cite": "Ben Kuhn, <em>Attention is your scarcest resource</em>"
+  },
+  {
+    "text": "It's about keeping the ball moving forward.",
+    "cite": "Ben Goldhaber, <em>The Ball</em>"
+  },
+  {
+    "text": "Stop trying to try and try.",
+    "cite": "Nate Soares, <em>Replacing Guilt</em>"
+  },
+  {
+    "text": "Show me the incentive and I'll show you the outcome.",
+    "cite": "Charlie Munger"
+  },
+  {
+    "text": "It always takes longer than you expect, even when you take into account Hofstadter's Law.",
+    "cite": "Douglas Hofstadter, <em>Gödel, Escher, Bach</em>"
+  },
+  {
+    "text": "The best way to get the right answer on the internet is not to ask a question; it's to post the wrong answer.",
+    "cite": "Cunningham's law"
+  },
+  {
+    "text": "Never attribute to malice that which is adequately explained by stupidity.",
+    "cite": "Hanlon's razor"
+  },
+  {
+    "text": "I knew exactly what to do. But in a much more real sense, I had no idea what to do.",
+    "cite": "Michael Scott, <em>The Office</em>"
+  },
+  {
+    "text": "Weekends don't count unless you spend them doing something completely pointless.",
+    "cite": "Calvin, <em>Calvin and Hobbes</em> by Bill Watterson"
+  },
+  {
+    "text": "How we spend our days is, of course, how we spend our lives.",
+    "cite": "Annie Dillard, <em>The Writing Life</em>"
+  },
+  {
+    "text": "It is difficult to get a man to understand something, when his salary depends upon his not understanding it.",
+    "cite": "Upton Sinclair"
+  },
+  {
+    "text": "The test of a first-rate intelligence is the ability to hold two opposed ideas in mind at the same time and still retain the ability to function.",
+    "cite": "F. Scott Fitzgerald, <em>The Crack-Up</em>"
+  },
+  {
+    "text": "Plans are worthless, but planning is everything.",
+    "cite": "Dwight D. Eisenhower"
+  },
+  {
+    "text": "Doubt is not a pleasant condition, but certainty is absurd.",
+    "cite": "Voltaire"
+  },
+  {
+    "text": "How we spend our days is, of course, how we spend our lives.",
+    "cite": "Annie Dillard, <em>The Writing Life</em>"
+  },
+  {
+    "text": "It is difficult to get a man to understand something, when his salary depends upon his not understanding it.",
+    "cite": "Upton Sinclair"
+  },
+  {
+    "text": "The test of a first-rate intelligence is the ability to hold two opposed ideas in mind at the same time and still retain the ability to function.",
+    "cite": "F. Scott Fitzgerald, <em>The Crack-Up</em>"
+  },
+  {
+    "text": "Plans are worthless, but planning is everything.",
+    "cite": "Dwight D. Eisenhower"
+  },
+  {
+    "text": "Doubt is not a pleasant condition, but certainty is absurd.",
+    "cite": "Voltaire"
+  },
+  {
+    "text": "I learned very early the difference between knowing the name of something and knowing something.",
+    "cite": "Richard Feynman"
+  },
+  {
+    "text": "Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?",
+    "cite": "Albus Dumbledore, <em>Harry Potter and the Deathly Hallows</em> by J. K. Rowling"
+  },
+  {
+    "text": "Look on my Works, ye Mighty, and despair!<br>Nothing beside remains. Round the decay<br>Of that colossal Wreck, boundless and bare<br>The lone and level sands stretch far away.",
+    "cite": "Percy Bysshe Shelley, <em>Ozymandias</em>"
+  },
+  {
+    "text": "I'm an early bird and a night owl. So I'm wise and I have worms.",
+    "cite": "Michael Scott, <em>The Office</em>"
+  },
+  {
+    "text": "I am big enough to admit that I am often inspired by myself.",
+    "cite": "Leslie Knope, <em>Parks and Recreation</em>"
+  },
+  {
+    "text": "Science advances one funeral at a time.",
+    "cite": "Paraphrase of Max Planck"
   }
 ];
