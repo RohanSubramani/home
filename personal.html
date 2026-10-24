@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal | Rohan Subramani</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="writing.html">Writing</a>
+    </nav>
+
+    <section class="personal">
+      <h1>Personal</h1>
+      <ul class="toc">
+        <li><a href="#favorites">Favorites</a></li>
+        <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#fundamental-question">My Answer to the Fundamental Question of Applied Rationality</a></li>
+        <li><a href="#awesome-memories">Awesome Memories</a></li>
+      </ul>
+
+      <h2 id="favorites">Favorites</h2>
+      <p><strong>Books:</strong> The Kingkiller Chronicle, The Stormlight Archive, Spinning Silver, Song of Solomon, Hyperion, The First Law, Ender's Game and Speaker for the Dead, Harry Potter, Calvin and Hobbes</p>
+      <p><strong>Movies:</strong> The Dark Knight, The Prestige, Oppenheimer, Forrest Gump, Pulp Fiction</p>
+      <p><strong>Shows:</strong> The Wire, Breaking Bad, Attack on Titan, The West Wing, Arcane, Extraordinary Attorney Woo, The Office, Parks and Rec, Ted Lasso, Brooklyn 99, Kim's Convenience</p>
+      <p><strong>Music:</strong> Arctic Monkeys, The Strokes, Pink Floyd, Dire Straits, Radiohead, Arcade Fire, Rare Americans, AJR, Joe P, Still Woozy, The Backseat Lovers, Peach Pit, The Beaches, Eminem, Guns N' Roses, Dominic Fike, Beach House, Hamilton, Arcane, Glass Animals, some Kanye, The Eagles, The Beatles</p>
+      <p><strong>Poems:</strong> Invictus, Ozymandias</p>
+      <p><strong>Other:</strong> <a href="https://paulgraham.com/greatwork.html">How to Do Great Work</a> by Paul Graham, <a href="https://www.youtube.com/watch?v=57XQ5MIyoLU">History Report</a> by Simon Rich, <a href="https://slatestarcodex.com/2015/06/02/and-i-show-you-how-deep-the-rabbit-hole-goes/">…And I Show You How Deep the Rabbit Hole Goes</a> by Scott Alexander</p>
+
+      <h2 id="quotes">Quotes</h2>
+      <div class="quote-shuffle" id="quoteShuffle" aria-live="polite"></div>
+      <p class="shuffle-row"><button type="button" class="shuffle-button" id="shuffleQuotes">Shuffle</button> <a class="shuffle-button" href="quotes.html">All quotes</a></p>
+
+      <h2 id="fundamental-question">My Answer to the Fundamental Question of Applied Rationality</h2>
+      <p><em>"What are you doing, and why are you doing it?"</em></p>
+      <p>I believe that the well-being of conscious creatures is inherently valuable. I am certain that my conscious experience exists, and that I have experiences that span a range of qualities (how good or bad they are). I'm pretty confident that other humans and lots of animals are also conscious and contribute to the value of the universe very similarly to the way I do. Given that I am (probably) only one out of a very large number of conscious creatures, my considerations around what actions to take are dominated by altruism. These moral principles are essentially in line with total hedonistic utilitarianism.</p>
+      <p>I believe contemplation of morality is not some academic exercise, but rather about answering the extremely practical question, "All things considered, what should I do?" I think the actions available today with the highest expected impact have most of that impact because of their possible influence on the long-term future. AI could make the world extraordinarily great, astonishingly terrible, or any number of things in between. The potential impact on the value of the universe is as large as anything I can conceive of.</p>
+      <p>Right now, I'm trying to make AI go well as an AI safety grantmaker at Coefficient Giving. I think grantmaking is extremely high-leverage: By making good decisions about where to allocate large amounts of money and by encouraging competent people to execute important AI safety projects that they otherwise might not work on, I suspect I can have more impact than by directly executing AI safety projects myself. But I may yet change my mind on that.</p>
+
+      <h2 id="awesome-memories">Awesome Memories</h2>
+      <p class="section-note">Entries from a running note I've kept since 2019, lightly trimmed and with names removed.</p>
+
+      <div class="memories">
+        <aside class="memories-aside"><p class="memories-note">Keep in mind, I wrote these mainly for myself :).</p></aside>
+        <div id="memoryShuffle" aria-live="polite"></div>
+        <p class="shuffle-row"><button type="button" class="shuffle-button" id="shuffleMemories">Shuffle</button> <a class="shuffle-button" href="memories.html">All memories</a></p>
+      </div>
+    </section>
+  </div>
+  <script src="quotes.js"></script>
+  <script src="memories.js"></script>
+  <script src="shuffle.js"></script>
+  <script>
+    window.drawQuotes = setupShuffle({
+      items: window.QUOTES,
+      perDraw: 4,
+      key: 'quoteDeck',
+      box: document.getElementById('quoteShuffle'),
+      button: document.getElementById('shuffleQuotes'),
+      render: renderQuote
+    });
+    window.drawMemories = setupShuffle({
+      items: window.MEMORIES,
+      perDraw: 3,
+      key: 'memoryDeck',
+      box: document.getElementById('memoryShuffle'),
+      button: document.getElementById('shuffleMemories'),
+      render: renderMemory,
+      order: byNewest
+    });
+  </script>
+</body>
+</html>

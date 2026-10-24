@@ -221,3 +221,155 @@ footer { display: none; }
     nav { margin-top: -1.5rem; }
     .post-list li { flex-direction: column; gap: 0.15rem; }
 }
+
+/* Personal page */
+.toc {
+    list-style: none;
+    font-family: var(--sans);
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.toc li { padding: 0.2rem 0; }
+
+.section-note {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    font-style: italic;
+}
+
+.memory {
+    margin: 0 0 1.6rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--rule);
+}
+
+.memory time {
+    display: block;
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    margin-bottom: 0.2rem;
+}
+
+.memory p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Disclaimer pinned in the right margin while scrolling the memories */
+.memories { position: relative; }
+
+.memories-aside {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(100% + 2.5rem);
+    width: 11rem;
+}
+
+.memories-note {
+    position: sticky;
+    top: 2rem;
+    margin: 0;
+    padding: 0.7rem 0.85rem;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    background: var(--wash);
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    line-height: 1.45;
+    color: var(--ink-soft);
+}
+
+@media (max-width: 1100px) {
+    .memories-aside {
+        position: static;
+        width: auto;
+        margin: 0 0 1.4rem;
+    }
+}
+
+.quote-list { list-style: none; }
+
+.quote-list li {
+    margin: 0 0 1.1rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--rule);
+}
+
+.quote-list blockquote {
+    font-style: italic;
+    font-size: 0.97rem;
+    line-height: 1.5;
+}
+
+.quote-list cite {
+    display: block;
+    margin-top: 0.2rem;
+    font-family: var(--sans);
+    font-style: normal;
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+}
+
+.quote-list cite em { font-style: italic; }
+
+/* Four random quotes with a Shuffle button */
+.quote-shuffle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+}
+
+.quote-card {
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    background: var(--wash);
+}
+
+.quote-card blockquote {
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.quote-card cite {
+    display: block;
+    margin-top: 0.35rem;
+    font-family: var(--sans);
+    font-style: normal;
+    font-size: 0.75rem;
+    color: var(--ink-soft);
+}
+
+.shuffle-row { margin: 0.9rem 0 0; }
+
+.shuffle-button {
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    line-height: 1.4;
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: var(--paper);
+    color: var(--ink);
+    cursor: pointer;
+}
+
+a.shuffle-button {
+    display: inline-block;
+    margin-left: 0.4rem;
+    text-decoration: none;
+}
+
+.shuffle-button:hover {
+    border-color: var(--red);
+    color: var(--red);
+}
+
+@media (max-width: 520px) {
+    .quote-shuffle { grid-template-columns: 1fr; }
+}
