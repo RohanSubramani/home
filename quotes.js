@@ -209,7 +209,7 @@ window.QUOTES = [
     "cite": "Pam Beesly, <em>The Office</em>"
   },
   {
-    "text": "'You miss 100% of the shots you don't take.' – Wayne Gretzky",
+    "text": "'You miss 100% of the shots you don't take. – Wayne Gretzky' – Michael Scott",
     "cite": "Michael Scott, <em>The Office</em>"
   },
   {
