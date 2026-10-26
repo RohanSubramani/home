@@ -223,14 +223,85 @@ footer { display: none; }
 }
 
 /* Personal page */
+/* Table of contents: pinned in the left margin on wide screens, with a hairline
+   and a dot for each section; the section being read is darkened. */
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.personal { position: relative; }
+.personal h1, .personal h2 { scroll-margin-top: 1.5rem; }
+
+.toc-aside { margin: 0 0 2.2rem; }
+
 .toc {
-    list-style: none;
+    display: block;
+    margin: 0;
     font-family: var(--sans);
-    font-size: 0.88rem;
-    line-height: 1.5;
+    font-size: 0.82rem;
+    line-height: 1.4;
 }
 
-.toc li { padding: 0.2rem 0; }
+.toc-title {
+    display: block;
+    margin: 0 0 0.7rem;
+    font-family: var(--serif);
+    font-size: 0.95rem;
+    font-variant: small-caps;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    text-decoration: none;
+}
+
+/* Repeats the page heading, so it only shows once the contents move to the margin. */
+@media (max-width: 1199px) { .toc-title { display: none; } }
+
+.toc ul {
+    list-style: none;
+    border-left: 1px solid var(--rule);
+}
+
+.toc li a {
+    position: relative;
+    display: block;
+    padding: 0.32rem 0 0.32rem 0.95rem;
+    color: var(--ink-soft);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.toc li a::before {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: 0.82em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--rule);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.toc li a:hover { color: var(--red); }
+.toc li a:hover::before { background: var(--red); }
+
+.toc li a.active { color: var(--ink); }
+.toc li a.active::before { background: var(--red); transform: scale(1.4); }
+
+@media (min-width: 1200px) {
+    .toc-aside {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: calc(100% + 3rem);
+        width: 11.5rem;
+        margin: 0;
+    }
+
+    .toc {
+        position: sticky;
+        top: 2.5rem;
+    }
+}
 
 .section-note {
     font-size: 0.95rem;

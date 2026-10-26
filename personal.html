@@ -18,13 +18,18 @@
     </nav>
 
     <section class="personal">
-      <h1>Personal</h1>
-      <ul class="toc">
-        <li><a href="#quotes">Quotes</a></li>
-        <li><a href="#favorites">Favorites</a></li>
-        <li><a href="#fundamental-question">My Answer to the Fundamental Question of Applied Rationality</a></li>
-        <li><a href="#awesome-memories">Awesome Memories</a></li>
-      </ul>
+      <h1 id="top">Personal</h1>
+      <aside class="toc-aside">
+        <nav class="toc" aria-label="Contents">
+          <a class="toc-title" href="#top">Personal</a>
+          <ul>
+            <li><a href="#quotes">Quotes</a></li>
+            <li><a href="#favorites">Favorites</a></li>
+            <li><a href="#fundamental-question">My Answer to the Fundamental Question of Applied Rationality</a></li>
+            <li><a href="#awesome-memories">Awesome Memories</a></li>
+          </ul>
+        </nav>
+      </aside>
 
       <h2 id="quotes">Quotes</h2>
       <div class="quote-shuffle" id="quoteShuffle" aria-live="polite"></div>
@@ -81,6 +86,26 @@
       render: renderMemory,
       order: byNewest
     });
+
+    // Highlight the section being read in the table of contents.
+    (function () {
+      var links = Array.prototype.slice.call(document.querySelectorAll('.toc li a'));
+      var targets = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+      var pending = false;
+      function update() {
+        pending = false;
+        var line = window.innerHeight * 0.3, current = -1;
+        targets.forEach(function (t, i) { if (t && t.getBoundingClientRect().top <= line) current = i; });
+        // At the very bottom, the last section is the one being read.
+        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) current = links.length - 1;
+        links.forEach(function (a, i) { a.classList.toggle('active', i === current); });
+      }
+      window.addEventListener('scroll', function () {
+        if (!pending) { pending = true; requestAnimationFrame(update); }
+      }, { passive: true });
+      window.addEventListener('resize', update);
+      update();
+    })();
   </script>
 </body>
 </html>
