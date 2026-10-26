@@ -435,5 +435,13 @@ window.QUOTES = [
   {
     "text": "Science advances one funeral at a time.",
     "cite": "Paraphrase of Max Planck"
+  },
+  {
+    "text": "The cure for boredom is curiosity. There is no cure for curiosity.",
+    "cite": "Ellen Parr"
+  },
+  {
+    "text": "I want to say, in all seriousness, that a great deal of harm is being done in the modern world by belief in the virtuousness of work, and that the road to happiness and prosperity lies in an organized diminution of work.",
+    "cite": "Bertrand Russell, <em>In Praise of Idleness</em>"
   }
 ];
