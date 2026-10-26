@@ -225,10 +225,6 @@ window.QUOTES = [
     "cite": "CFAR, the Fundamental Question of Applied Rationality"
   },
   {
-    "text": "The most important step is the next one.",
-    "cite": "Paraphrase of Dalinar Kholin, <em>Oathbringer</em> by Brandon Sanderson"
-  },
-  {
     "text": "Doing &gt;&gt; Planning.",
     "cite": "Unknown"
   },
