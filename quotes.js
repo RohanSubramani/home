@@ -443,5 +443,109 @@ window.QUOTES = [
   {
     "text": "I want to say, in all seriousness, that a great deal of harm is being done in the modern world by belief in the virtuousness of work, and that the road to happiness and prosperity lies in an organized diminution of work.",
     "cite": "Bertrand Russell, <em>In Praise of Idleness</em>"
+  },
+  {
+    "text": "There is no such thing as philosophy-free science; there is only science whose philosophical baggage is taken on board without examination.",
+    "cite": "Daniel Dennett, <em>Darwin's Dangerous Idea</em>"
+  },
+  {
+    "text": "Man can do what he wills but he cannot will what he wills.",
+    "cite": "Arthur Schopenhauer"
+  },
+  {
+    "text": "Good mathematicians see analogies. Great mathematicians see analogies between analogies.",
+    "cite": "Stefan Banach (via Stanisław Ulam)"
+  },
+  {
+    "text": "Mathematics is the art of giving the same name to different things.",
+    "cite": "Henri Poincaré"
+  },
+  {
+    "text": "The purpose of abstraction is not to be vague, but to create a new semantic level in which one can be absolutely precise.",
+    "cite": "Edsger Dijkstra"
+  },
+  {
+    "text": "Civilization advances by extending the number of important operations which we can perform without thinking about them.",
+    "cite": "Alfred North Whitehead, <em>An Introduction to Mathematics</em>"
+  },
+  {
+    "text": "Nature uses only the longest threads to weave her patterns, so each small piece of her fabric reveals the organization of the entire tapestry.",
+    "cite": "Richard Feynman, <em>The Character of Physical Law</em>"
+  },
+  {
+    "text": "Science is the belief in the ignorance of experts.",
+    "cite": "Richard Feynman"
+  },
+  {
+    "text": "Why is there something rather than nothing?",
+    "cite": "Gottfried Wilhelm Leibniz"
+  },
+  {
+    "text": "If you can't solve a problem, then there is an easier problem you can solve: find it.",
+    "cite": "George Pólya, <em>How to Solve It</em> (paraphrase)"
+  },
+  {
+    "text": "Take three books off the shelf in any order, and you'll always wonder why the first two didn't explain it the way the third one did.",
+    "cite": "David Albert's Three Book Theorem (paraphrased)"
+  },
+  {
+    "text": "The good of any one individual is of no more importance, from the point of view (if I may say so) of the Universe, than the good of any other.",
+    "cite": "Henry Sidgwick, <em>The Methods of Ethics</em>"
+  },
+  {
+    "text": "A partnership not only between those who are living, but between those who are living, those who are dead, and those who are to be born.",
+    "cite": "Edmund Burke, <em>Reflections on the Revolution in France</em>"
+  },
+  {
+    "text": "If you're not embarrassed by the first version of your product, you've launched too late.",
+    "cite": "Reid Hoffman"
+  },
+  {
+    "text": "Perfect is the enemy of good.",
+    "cite": "Voltaire"
+  },
+  {
+    "text": "What is important is seldom urgent and what is urgent is seldom important.",
+    "cite": "Dwight D. Eisenhower (attributed)"
+  },
+  {
+    "text": "Success is the sum of small efforts, repeated day in and day out.",
+    "cite": "Robert Collier"
+  },
+  {
+    "text": "No, no! They aren't a record of my thinking process. They are my thinking process.",
+    "cite": "Richard Feynman, on his notes"
+  },
+  {
+    "text": "What is grief, if not love persevering?",
+    "cite": "Vision, <em>WandaVision</em>"
+  },
+  {
+    "text": "Grief is the price we pay for love.",
+    "cite": "Queen Elizabeth II"
+  },
+  {
+    "text": "Don't cry because it's over. Smile because it happened.",
+    "cite": "Often attributed to Dr. Seuss"
+  },
+  {
+    "text": "Life can only be understood backwards; but it must be lived forwards.",
+    "cite": "Søren Kierkegaard"
+  },
+  {
+    "text": "Clouds come floating into my life, no longer to carry rain or usher storm, but to add color to my sunset sky.",
+    "cite": "Rabindranath Tagore, <em>Stray Birds</em>"
+  },
+  {
+    "text": "Music is a fine thing, but metal lasts.\"<br>\"Metal rusts,\" I thought, \"music lasts forever.",
+    "cite": "Kilvin and Kvothe, <em>The Name of the Wind</em> by Patrick Rothfuss"
+  },
+  {
+    "text": "The best dates are those where you share a part of yourself.",
+    "cite": "<em>The Unweaving of a Beautiful Thing</em>"
+  },
+  {
+    "text": "A person grows with their duties and ambitions. No founder was qualified to run the company that she/he ended up running (in fact no leader ever was before doing so).",
+    "cite": "From a personal conversation"
   }
 ];
