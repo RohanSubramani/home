@@ -1,58 +1,47 @@
-// Deals a few items at a time from a shuffled deck, so no item repeats until
-// every item has been shown. The deck persists across visits in localStorage.
+// Shows a few items at a time, always choosing the items this viewer has seen
+// the fewest times (ties broken at random). So no item is shown n + 1 times
+// before every item has been shown n times. Counts are saved in localStorage
+// and keyed by each item's text, so adding, removing, or reordering items
+// never resets or scrambles a viewer's progress; new items simply come first.
 function setupShuffle(opts) {
   var items = opts.items || [];
   var box = opts.box;
   if (!items.length || !box) return function () { return []; };
 
-  var total = items.length;
-  var perDraw = Math.min(opts.perDraw, total);
-  var deck = load();
+  var perDraw = Math.min(opts.perDraw, items.length);
 
-  function shuffle(arr) {
-    for (var i = arr.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
-    }
-    return arr;
-  }
-
-  // New cycle of every item. Items already in the current draw are kept
-  // out of the first `skip` slots so a draw never shows the same item twice.
-  function newCycle(current, skip) {
-    var rest = [];
-    for (var i = 0; i < total; i++) if (current.indexOf(i) < 0) rest.push(i);
-    shuffle(rest);
-    current.forEach(function (id) {
-      var at = skip + Math.floor(Math.random() * (rest.length - skip + 1));
-      rest.splice(at, 0, id);
-    });
-    return rest;
-  }
+  function keyOf(item) { return item.text; }
 
   function load() {
     try {
       var saved = JSON.parse(localStorage.getItem(opts.key));
-      if (saved && saved.total === total && Array.isArray(saved.deck) &&
-          saved.deck.every(function (id) { return id >= 0 && id < total; })) {
-        return saved.deck;
-      }
+      if (saved && typeof saved === 'object' && !Array.isArray(saved)) return saved;
     } catch (e) {}
-    return [];
+    return {};
   }
 
-  function save() {
-    try { localStorage.setItem(opts.key, JSON.stringify({ total: total, deck: deck })); } catch (e) {}
+  function save(counts) {
+    // Only keep counts for items that still exist.
+    var kept = {};
+    items.forEach(function (item) { kept[keyOf(item)] = counts[keyOf(item)] || 0; });
+    try { localStorage.setItem(opts.key, JSON.stringify(kept)); } catch (e) {}
   }
 
   function draw() {
-    var picked = deck.splice(0, perDraw);
-    if (picked.length < perDraw) {
-      var need = perDraw - picked.length;
-      deck = newCycle(picked, need);
-      picked = picked.concat(deck.splice(0, need));
-    }
-    save();
+    // Re-read on every draw so several open tabs share one tally.
+    var counts = load();
+    var order = items.map(function (item, id) {
+      return { id: id, count: counts[keyOf(item)] || 0, tiebreak: Math.random() };
+    });
+    order.sort(function (a, b) { return a.count - b.count || a.tiebreak - b.tiebreak; });
+    var picked = order.slice(0, perDraw).map(function (o) { return o.id; });
+
+    picked.forEach(function (id) {
+      var k = keyOf(items[id]);
+      counts[k] = (counts[k] || 0) + 1;
+    });
+    save(counts);
+
     box.innerHTML = '';
     var shown = picked.slice();
     if (opts.order) shown.sort(function (a, b) { return opts.order(items[a], items[b]); });

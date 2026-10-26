@@ -62,12 +62,12 @@
   </div>
   <script src="quotes.js"></script>
   <script src="memories.js"></script>
-  <script src="shuffle.js"></script>
+  <script src="shuffle.js?v=2"></script>
   <script>
     window.drawQuotes = setupShuffle({
       items: window.QUOTES,
       perDraw: 4,
-      key: 'quoteDeck',
+      key: 'quoteCounts',
       box: document.getElementById('quoteShuffle'),
       button: document.getElementById('shuffleQuotes'),
       render: renderQuote
@@ -75,7 +75,7 @@
     window.drawMemories = setupShuffle({
       items: window.MEMORIES,
       perDraw: 3,
-      key: 'memoryDeck',
+      key: 'memoryCounts',
       box: document.getElementById('memoryShuffle'),
       button: document.getElementById('shuffleMemories'),
       render: renderMemory,

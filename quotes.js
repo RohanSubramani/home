@@ -393,26 +393,6 @@ window.QUOTES = [
     "cite": "Voltaire"
   },
   {
-    "text": "How we spend our days is, of course, how we spend our lives.",
-    "cite": "Annie Dillard, <em>The Writing Life</em>"
-  },
-  {
-    "text": "It is difficult to get a man to understand something, when his salary depends upon his not understanding it.",
-    "cite": "Upton Sinclair"
-  },
-  {
-    "text": "The test of a first-rate intelligence is the ability to hold two opposed ideas in mind at the same time and still retain the ability to function.",
-    "cite": "F. Scott Fitzgerald, <em>The Crack-Up</em>"
-  },
-  {
-    "text": "Plans are worthless, but planning is everything.",
-    "cite": "Dwight D. Eisenhower"
-  },
-  {
-    "text": "Doubt is not a pleasant condition, but certainty is absurd.",
-    "cite": "Voltaire"
-  },
-  {
     "text": "I learned very early the difference between knowing the name of something and knowing something.",
     "cite": "Richard Feynman"
   },
