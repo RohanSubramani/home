@@ -513,7 +513,7 @@ window.QUOTES = [
     "cite": "Rabindranath Tagore, <em>Stray Birds</em>"
   },
   {
-    "text": "Music is a fine thing, but metal lasts.\"<br>\"Metal rusts,\" I thought, \"music lasts forever.",
+    "text": "'Music is a fine thing, but metal lasts...' It was the first thing he had said to me that I did not agree with wholeheartedly. 'Metal rusts,' I thought, 'music lasts forever.'",
     "cite": "Kilvin and Kvothe, <em>The Name of the Wind</em> by Patrick Rothfuss"
   },
   {
