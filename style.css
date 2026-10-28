@@ -459,3 +459,9 @@ a.shuffle-button {
 }
 
 .answer-list li { margin-bottom: 0.7rem; }
+
+.favorites-list {
+    margin: -0.6rem 0 1rem 1.2rem;
+}
+
+.favorites-list li { margin-bottom: 0.25rem; }
