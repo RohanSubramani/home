@@ -523,5 +523,13 @@ window.QUOTES = [
   {
     "text": "A person grows with their duties and ambitions. No founder was qualified to run the company that she/he ended up running (in fact no leader ever was before doing so).",
     "cite": "From a personal conversation"
+  },
+  {
+    "text": "Reconceptualize things as your top affordances [like blogging and parties].",
+    "cite": "<a href=\"https://www.lesswrong.com/posts/F3P5BSjNeAazKB7wm/reconceptualize-things-as-your-top-affordances\">Katja Grace</a>"
+  },
+  {
+    "text": "I was modeling my work as finite, with the rest state being the state where all tasks were completed, and so every new task would push me further from that precious rest state and wear me down.<br><br>But the work that needs to be done is not a finite list of tasks, it is a neverending stream... The goal is not to finish all the work before you; for that is impossible. The goal is simply to move through the work. Instead of struggling to reach the end of the stream, simply focus on moving along it.",
+    "cite": "<a href=\"https://mindingourway.com/rest-in-motion/\">Nate Soares</a>, <em>Rest in Motion</em>"
   }
 ];
