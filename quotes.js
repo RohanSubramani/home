@@ -497,8 +497,8 @@ window.QUOTES = [
     "cite": "Vision, <em>WandaVision</em>"
   },
   {
-    "text": "Grief is the price we pay for love.",
-    "cite": "Queen Elizabeth II"
+    "text": "The pain of grief is just as much a part of life as the joy of love; it is, perhaps, the price we pay for love, the cost of commitment.",
+    "cite": "Colin Murray Parkes, <em>Bereavement: Studies of Grief in Adult Life</em>"
   },
   {
     "text": "Don't cry because it's over. Smile because it happened.",
