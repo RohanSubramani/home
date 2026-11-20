@@ -399,6 +399,9 @@ html { scroll-behavior: smooth; }
     border: 1px solid var(--rule);
     border-radius: 6px;
     background: var(--wash);
+    /* 90th-percentile quote height at desktop width; longer quotes scroll. */
+    max-height: 10.4rem;
+    overflow-y: auto;
 }
 
 .quote-card blockquote {
