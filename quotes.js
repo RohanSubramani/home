@@ -297,7 +297,7 @@ window.QUOTES = [
     "cite": "Will Durant, summarizing Aristotle"
   },
   {
-    "text": "I guess you need to have a habit of saying those things to actually say them.",
+    "text": "I guess you need to have a habit of saying [emotionally difficult] things to actually say them.",
     "cite": "Jung Myeong-seok, <em>Extraordinary Attorney Woo</em>"
   },
   {
