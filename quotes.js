@@ -210,7 +210,7 @@ window.QUOTES = [
   },
   {
     "text": "'You miss 100% of the shots you don't take. – Wayne Gretzky' – Michael Scott",
-    "cite": "Michael Scott, <em>The Office</em>"
+    "cite": "Rohan Subramani"
   },
   {
     "text": "Give me today, for once, the worst throw of your dice, destiny. Today I transmute everything into gold.",
